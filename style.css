@@ -57,6 +57,9 @@ a {
     font-weight: bold;
 }
 @media screen and (max-width: 768px) {
+  body{
+    width:100%;
+  }
     .navbar {
       flex-direction: column;
       justify-content: center;
@@ -70,6 +73,7 @@ a {
       align-items: center;
       margin-top: 30px;
       display: none;
+      width: 100%;
     }
     
     .nav-link-box {
