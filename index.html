@@ -1,35 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio||Maheshwar Nag</title>
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Maheshwar Nag - Portfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
-<body> 
-        <div class="container left">
-          <div class="centered">
-            <h2>Maheshwar Nag</h2>
-            <h3>Frontend and Java Developer,Graphic Designer </h3>
-             <p>Passionate about technology and have expertise in Java , Frontend Development and Graphic Design.I am always looking for opportunities to learn and grow in the field of technology.</p>
-             <p class="buttons"><a href=MaheshwarResume.pdf download><button>Download CV</button></a>
-              <a href="mailto:maheshwarnag860@gmail.com?subject =contact = Message"><button>Contact me</button></a></p>
-          </div>
-        </div>
-        <div class="container right">
-            <nav class="navbar">
-                <a href="#main">Home</a>
-                <a href="#about">About</a>
-                <a href="#Blog">Blog</a>
-                <a href="#Projects">Projects</a>
-                <a href="#Contact">Contact</a>
-            </nav>
-            <div class="portfolio_img">
-              <img src="portfolioimage.jpg" alt="My img">
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="container">
+				<div class="navbar-brand">
+					<a href="#home">Maheshwar Nag</a>
+				</div>
+				<div class="navbar-menu">
+					<div class="nav-link-box">
+                        <a class="nav-link" href="#home">Home</a>
+                    </div>
+					<div class="nav-link-box">
+                        <a class="nav-link" href="#about">About</a>
+                    </div>
+                    <div class="nav-link-box">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </div>
+                    <div class="nav-link-box">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </div>
+                    <div class="nav-link-box">
+                        <a class="nav-link" href="maheshwar.png"target="_blank">Resume</a>
+                    </div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section id="home" class="hero-section">
+			<div class="container">
+                <div class="profile-img">
+                    <img src="hack.jpg" alt="Maheshwar Nag" class="img-fluid rounded-circle">
+                  </div>
+				<h1>Maheshwar Nag</h1>
+				<h3>Java Developer | Web Developer | Graphic Designer</h3>
+			</div>
+            <section id="home" class="home">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="social-links">
+                        <div class="social-link-box">
+                          <a href="https://www.linkedin.com/in/maheshwar04" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                          </a>
+                        </div>
+                        <div class="social-link-box">
+                          <a href="https://github.com/maheshwar04" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                          </a>
+                        </div>
+                        <div class="social-link-box">
+                          <a href="https://www.instagram.com/maheshwar04_" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>    
+		</section>
+
+		<section id="about" class="about-section">
+			<div class="container">
+				<h2>About Me</h2>
+				<p>I am a Java Developer, Web Developer, and Graphic Designer , developing web applications and designing user interfaces. I am proficient in Java, HTML, CSS, JavaScript</p>
+			</div>
+		</section>
+        <section id="skills" class="skills">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2>My Skills</h2>
+                  <div class="skill-bars">
+                    <div class="skill-bar">
+                      <div class="skill-bar-name">HTML</div>
+                      <div class="skill-bar-bar">
+                        <div class="skill-bar-progress" style="width: 70%;"></div>
+                      </div>
+                    </div>
+                    <div class="skill-bar">
+                      <div class="skill-bar-name">CSS</div>
+                      <div class="skill-bar-bar">
+                        <div class="skill-bar-progress" style="width: 60%;"></div>
+                      </div>
+                    </div>
+                    <div class="skill-bar">
+                      <div class="skill-bar-name">JavaScript</div>
+                      <div class="skill-bar-bar">
+                        <div class="skill-bar-progress" style="width: 50%;"></div>
+                      </div>
+                    </div>
+                    <div class="skill-bar">
+                      <div class="skill-bar-name">Java</div>
+                      <div class="skill-bar-bar">
+                        <div class="skill-bar-progress" style="width: 80%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>          
-        </body>
-        </html> 
+          </section>
+          
+
+		<section id="contact" class="contact-section">
+			<div class="container">
+				<h2>Contact Me</h2>
+				<form action="mailto:maheshwarnag860@gmail.com" method="post" enctype="text/plain">
+					<div class="form-group">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" placeholder="Enter your email">
+					</div>
+					<div class="form-group">
+						<label for="message">Message:</label>
+						<textarea id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
+					</div>
+					<button type="submit" class="submit-btn">Send</button>
+				</form>
+			</div>
+		</section>
+	</main>
+    <footer>
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://github.com/maheshwar04" class="social-link"><i class="fab fa-github">Github</i></a>
+                <a href="https://www.linkedin.com/in/maheshwar04" class="social-link"><i class="fab fa-linkedin"></i>Linkedin</a>
+                <a href="https://twitter.com/maheshwar08" class="social-link"><i class="fab fa-twitter">Twitter</i></a>
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2023 Maheshwar Nag. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
