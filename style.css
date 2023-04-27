@@ -69,6 +69,7 @@ a {
       justify-content: center;
       align-items: center;
       margin-top: 30px;
+      display: none;
     }
     
     .nav-link-box {
