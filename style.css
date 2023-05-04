@@ -49,6 +49,10 @@ a {
 	justify-content: flex-end;
 	align-items: center;
 }
+.nav-link-box:hover {
+	background-color: #050404;
+    color: rgb(252, 252, 249);
+}
 
 .nav-link-box {
 	padding: 10px;
@@ -57,51 +61,30 @@ a {
     font-weight: bold;
 }
 @media screen and (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: auto;
-      width:100%;
-    }
-    
-    .navbar-menu {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 30px;
-      display: none;
-    }
-    
-    .nav-link-box {
-      padding: 10px 15px;
-      margin: 10px 0;
-      font-size: 1.2rem;
-    }
-    
-    .hero-section h1 {
-      font-size: 40px;
-    }
-    
-    .hero-section h3 {
-      font-size: 20px;
-      margin-bottom: 20px;
-    }
-    
-    .social-links {
-      flex-wrap: wrap;
-    }
-    
-    .social-link-box {
-      width: 35%;
-      margin: 2px;
-    }
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width:100%;
   }
-
-.nav-link-box:hover {
-	background-color: #050404;
-    color: rgb(252, 252, 249);
+  
+  .navbar-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    display: none;
+  }
+  
+  .nav-link-box {
+    padding: 10px 15px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
 }
+
 .profile-img {
     width: 150px;
     height: 150px;
@@ -139,6 +122,16 @@ a {
 	font-weight: 500;
 	color: #777;
 	margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 53px;
+  }
+  
+  .hero-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 }
 .social-links {
     display: flex;
@@ -332,6 +325,19 @@ a {
     
     .social-link:hover {
     color: #c2b1b1;
+    }
+    @media screen and (max-width: 768px) {
+      .social-link-box {
+        width: 35%;
+        margin: 2px;
+      }
+      .social-link {
+        display: block;
+        font-size: 20px;
+        color: #151414;
+        margin: 0 10px;
+        transition: all 0.3s ease;
+        }
     }
     
     .footer-text {
