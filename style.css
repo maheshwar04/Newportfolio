@@ -24,7 +24,6 @@ a {
 .container h2{
     text-decoration:underline;
 }
-
 .navbar {
 	background-color: #cacbd2b9;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -39,7 +38,10 @@ a {
 	font-size: 34px;
 	font-weight: 800;
 } 
-
+.navicon{
+  display: none;
+  cursor: pointer;
+}
 .navbar-brand a {
 	color: #211f1f;
 }
@@ -61,26 +63,30 @@ a {
     font-weight: bold;
 }
 @media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width:100%;
-  }
-  
-  .navbar-menu {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
+	.navicon {
+		cursor: pointer;
+    display: block;
+	}
+
+	.navbar-menu.hidden {
     display: none;
   }
-  
+  .navbar-menu.active {
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+  .navbar-menu.notactive {
+    display: none;
+  }
   .nav-link-box {
-    padding: 10px 15px;
-    margin: 10px 0;
-    font-size: 1.2rem;
+    font-size: 20px;
+  }
+  .nav-link-box:hover{
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
   }
   
 }
