@@ -67,6 +67,9 @@ a {
 		cursor: pointer;
     display: block;
 	}
+  .navbar-brand a {
+    font-size: 2rem;
+}
 
 	.navbar-menu.hidden {
     display: none;
