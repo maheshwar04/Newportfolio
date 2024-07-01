@@ -36,7 +36,8 @@ form.addEventListener('submit', function(e) {
         .then(async (response) => {
             let json = await response.json();
             if (response.status == 200) {
-                result.innerHTML = json.message;
+                result.classList.add("response-message");
+                result.innerHTML ="<p>Your response has been recorded. We will reach you soon.</p>";
             } else {
                 console.log(response);
                 result.innerHTML = json.message;
@@ -50,6 +51,7 @@ form.addEventListener('submit', function(e) {
             form.reset();
             setTimeout(() => {
                 result.style.display = "none";
+                result.innerHTML="";
             }, 3000);
         });
 });
