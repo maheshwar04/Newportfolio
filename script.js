@@ -22,7 +22,7 @@ form.addEventListener('submit', function(e) {
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
-
+    result.classList.add("response-message");
     result.innerHTML = "Please wait..."
 
     fetch('https://api.web3forms.com/submit', {
@@ -36,7 +36,6 @@ form.addEventListener('submit', function(e) {
         .then(async (response) => {
             let json = await response.json();
             if (response.status == 200) {
-                result.classList.add("response-message");
                 result.innerHTML ="<p>Your response has been recorded. We will reach you soon.</p>";
             } else {
                 console.log(response);
@@ -51,6 +50,7 @@ form.addEventListener('submit', function(e) {
             form.reset();
             setTimeout(() => {
                 result.style.display = "none";
+                result.classList.remove("response-message");
                 result.innerHTML="";
             }, 3000);
         });
