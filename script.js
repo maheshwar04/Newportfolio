@@ -44,7 +44,7 @@ form.addEventListener('submit', function(e) {
         })
         .catch(error => {
             console.log(error);
-            result.innerHTML = "Something went wrong!";
+            result.innerHTML = "Something went wrong! Try again.";
         })
         .then(function() {
             form.reset();
