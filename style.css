@@ -358,17 +358,4 @@ a {
     .footer-text p {
     margin-bottom: 0;
     }
-    .response-message {
-            display: inline-block; 
-            font-family: Arial, sans-serif;
-            background-color: #3deef1;
-            margin: 10px 0;
-            text-align: center;
-            color: #010e0b;
-            padding: 5px 10px;
-            border-radius: 10px;
-  }
-  .response-message p {
-      font-size: 18px;
-      margin: 10px 0;
-  }
+   
