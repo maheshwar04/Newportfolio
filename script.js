@@ -7,10 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
         this.classList.toggle('active');
         navbarMenu.classList.toggle('active');
     });
-    mainContainer.addEventListener('click', function () {
-        this.classList.toggle('active');
-        navbarMenu.classList.toggle('active');
-    });
 
 });
 const form = document.getElementById('form');
