@@ -2,12 +2,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const navicon = document.querySelector('.navicon');
     const navbarMenu = document.querySelector('.navbar-menu');
     const mainContainer=document.querySelector('.hero-section');
+    const link=document.querySelectorAll(".nav-link");
 
     navicon.addEventListener('click', function () {
         this.classList.toggle('active');
         navbarMenu.classList.toggle('active');
     });
-
+    link.forEach((e) =>{
+        e.addEventListener('click', () => {
+          navbarMenu.classList.remove('active');
+        });
+      });      
 });
 const form = document.getElementById('form');
 const result = document.getElementById('result');
